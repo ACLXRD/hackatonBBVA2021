@@ -1,0 +1,37 @@
+:root{
+    --darkblue: #072146;
+    --linkblue: #5BBEFF;
+    --objblue: #1464A5;
+}
+@font-face {
+    font-family: 'BentonSans Book';
+    src: url('/css-global/fonts/BentonSans\ Book.otf') format('woff2');
+    font-family: 'BentonSans Regular';
+    src: url('/css-global/fonts/BentonSans\ Regular.otf') format('woff2');
+    font-family: 'Engravers MT';
+    src: url('/css-global/fonts/ENGR.TTF ') format('woff2');
+
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color:var(--darkblue);
+    font-family: 'BentonSans Book';
+}
+nav{
+    background-color: var(--darkblue);
+}
+
+/* Utils */
+span.stronger{
+    font-family: 'BentonSans Regular';
+}
+.brd{
+    border: red solid 1px;
+}
+.brd2{
+    border: rgb(0, 255, 34) solid 1px;
+}

@@ -1,0 +1,44 @@
+body{
+    overflow-x: hidden; 
+}
+#container{
+    padding: 5% 8%;
+}
+section{
+    height: 70vh;
+}
+#image{
+    background: url(../img/Imagen\ 1.png);
+    background-position: center center;
+    background-size: cover;
+}
+.step{
+    color: var(--objblue);
+    font-size: 70px;
+    text-align: center;
+}
+.instruction{
+    display: inline-block;
+    font-size: 30px;
+    padding-right: 5%;
+}
+.statement{
+    color: var(--objblue);
+    margin: 4% auto;
+    width: 70%;
+}
+.statement-q{
+    font-family: 'Engravers MT';
+    font-size: 70px;
+    padding: 0;
+    text-align: right;
+    transform: scale(-1,1);
+}
+.statement-text{
+    font-size: 28px; 
+    padding-top: 15px;
+}
+
+#change p{
+    margin: 3px;
+}
