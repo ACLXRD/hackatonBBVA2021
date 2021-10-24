@@ -29,7 +29,25 @@
     font-size: 28px; 
     padding-top: 15px;
 }
-
 #change p{
     margin: 3px;
+}
+#btnSiguiente a{
+    color: white;
+}
+.bi-arrow-right{
+    padding: 2px 2px 0;
+}
+#btnSiguiente{
+    color: white;
+    background-color: var(--darkblue);
+    border-radius: 20px;
+    display: none;
+    font-size: 20px;
+    padding: 10px 30px;
+    width: 30%;
+}
+
+#btnSiguiente:hover{
+    background-color: var(--objblue);
 }

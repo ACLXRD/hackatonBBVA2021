@@ -3,6 +3,7 @@ function recordAudio() {
     navigator.mediaDevices.getUserMedia({ audio: true })
         .then(stream => {
             $(".loader").css("display", "block");
+            $('#change').css("display", "none");
             const mediaRecorder = new MediaRecorder(stream);
             mediaRecorder.start();
 
@@ -18,6 +19,8 @@ function recordAudio() {
                 const audio = new Audio(audioUrl);
                 stream.getTracks()[0].stop();
                 saveAudio(audio);
+                $('#microphone').css("display", "none");
+                $('#btnSiguiente').css("display", "inline-block");
                 audio.play();
             });
            
