@@ -1,0 +1,156 @@
+.services .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 0  0 40px 0;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+  }
+  
+  .services .icon-box:hover {
+    transform: translateY(-5px);
+    border-color: #ef7f4d;
+  }
+  
+  .services .icon i {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 15px;
+    color: #ef7f4d;
+  }
+  
+  .services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .services .title a {
+    color: #111;
+  }
+  
+  .services .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+
+  .Textos .lead {
+    font-size: 18px;
+  }
+  
+
+  .contenedor span {
+    background: #061e8a;
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    display: inline-block;
+    font-size: 22px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 #ececec;
+    margin-right: 5px;
+  }
+
+  .contenedor {
+    padding: 40px;
+    width: 100%;
+    max-width: 10000px;
+    margin: auto;
+  }
+
+  .Textos .lead {
+    font-size: 18px;
+  }
+
+
+  #image{
+    background: url('https://accionistaseinversores.bbva.com/wp-content/uploads/2021/02/vela1-1920x1180.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.step{
+    color: var(--objblue);
+    font-size: 70px;
+    text-align: center;
+}
+.instruction{
+    display: inline-block;
+    font-size: 30px;
+    padding-right: 5%;
+}
+.statement{
+    color: var(--objblue);
+    margin: 4% auto;
+    width: 70%;
+}
+.statement-q{
+    font-family: 'Engravers MT';
+    font-size: 70px;
+    padding: 0;
+    text-align: right;
+    transform: scale(-1,1);
+}
+.statement-text{
+    font-size: 28px; 
+    padding-top: 15px;
+}
+.bi-upload{
+    color: var(--objblue);
+    border-radius: 50%;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    padding: 10px 12px;
+}
+#result{
+    color: var(--linkblue);
+    font-style: italic;
+}
+#upload-file{
+    display:none;
+}
+#btnSiguiente a{
+    color: white;
+}
+.bi-arrow-right{
+    padding: 2px 2px 0;
+}
+#btnSiguiente{
+    color: white;
+    background-color: var(--darkblue);
+    border-radius: 20px;
+    display: none;
+    font-size: 20px;
+    padding: 10px 30px;
+    width: 30%;
+}
+
+#btnSiguiente:hover{
+    background-color: var(--objblue);
+}
+
+
+.btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 3px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: #fff;
+    background-image: linear-gradient(to right, #061e8a, #061e9a, #061e8a);
+    text-align:center;
+  }
+  
+  #hero .btn-get-started:hover {
+    background: #c4c6ff;
+  }
