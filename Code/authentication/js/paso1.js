@@ -13,7 +13,7 @@ function recordAudio() {
             });
 
             mediaRecorder.addEventListener("stop", () => {
-                const audioBlob = new Blob(audioChunks);
+                const audioBlob = new Blob(audioChunks, {type:'audio/webm'});
                 const audioUrl = URL.createObjectURL(audioBlob);
                 const audio = new Audio(audioUrl);
                 stream.getTracks()[0].stop();
@@ -30,6 +30,11 @@ function recordAudio() {
         });
 }
 
-function saveAudio(audio) {
-    console.log(audio);
+function saveAudio(file) {
+    const formData = new FormData();
+    formData.append('audio-file', file);
+    return fetch('http://localhost:3000/audio', {
+        method: 'POST',
+        body: formData
+    });
 }

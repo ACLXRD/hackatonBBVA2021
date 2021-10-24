@@ -1,14 +1,5 @@
-body{
-    overflow-x: hidden; 
-}
-#container{
-    padding: 5% 8%;
-}
-section{
-    height: 70vh;
-}
 #image{
-    background: url(../img/Imagen\ 1.png);
+    background: url(../../img/Imagen\ 1.png);
     background-position: center center;
     background-size: cover;
 }
