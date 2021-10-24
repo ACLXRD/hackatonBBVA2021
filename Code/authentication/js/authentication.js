@@ -18,7 +18,7 @@ function recordAudio() {
                 const audioUrl = URL.createObjectURL(audioBlob);
                 const audio = new Audio(audioUrl);
                 stream.getTracks()[0].stop();
-                saveAudio(audio);
+                saveAudio(audioBlob);
                 $('#microphone').css("display", "none");
                 $('#btnSiguiente').css("display", "inline-block");
                 audio.play();
@@ -36,8 +36,11 @@ function recordAudio() {
 function saveAudio(file) {
     const formData = new FormData();
     formData.append('audio-file', file);
-    return fetch('http://localhost:3000/audio', {
+    return fetch('http://localhost:5000/audio', {
         method: 'POST',
-        body: formData
+        body: formData,
+        headers:{
+            fileName:'audio.mp3'
+        }
     });
 }

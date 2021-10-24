@@ -7,25 +7,28 @@ class Object:
 
 class Cliente(Object):
     """Clients model"""
-    def __init__(self,id,nit,nombreComercial,razonSocial,sigla,direccion,codigoPostal,correo,establecimientos,firma,frase,municipio,documento,tipoPersona,telefonos,socios,representantes,actividades):
+    def __init__(self,id=0,nit=0,nombreComercial=0,
+    razonSocial="",sigla=0,direccion="",correo="",establecimientos=0,
+    firma="",frase="",rut="",municipio=0,tipoPersona="",telefonos=[],
+    socios=[],representantes=[],actividades=[],token=""):
         self.id=id
         self.nit=nit
         self.nombreComercial=nombreComercial
         self.razonSocial=razonSocial
         self.sigla=sigla
         self.direccion=direccion
-        self.codigoPostal=codigoPostal
         self.correo=correo
         self.establecimientos=establecimientos
         self.firma=firma
         self.frase=frase
         self.municipio=municipio
-        self.documento=documento
         self.tipoPersona=tipoPersona
         self.telefonos=telefonos
         self.socios=socios
         self.representantes=representantes
         self.actividades=actividades
+        self.rut=rut
+        self.token=token
 
 class Departamento(Object):
     """Departments model"""
