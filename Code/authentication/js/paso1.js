@@ -2,6 +2,7 @@ let openMic = 0;
 function recordAudio() {
     navigator.mediaDevices.getUserMedia({ audio: true })
         .then(stream => {
+            $(".loader").css("display", "block");
             const mediaRecorder = new MediaRecorder(stream);
             mediaRecorder.start();
 
@@ -12,11 +13,11 @@ function recordAudio() {
             });
 
             mediaRecorder.addEventListener("stop", () => {
-                console.log("gola")
                 const audioBlob = new Blob(audioChunks);
                 const audioUrl = URL.createObjectURL(audioBlob);
                 const audio = new Audio(audioUrl);
                 stream.getTracks()[0].stop();
+                saveAudio(audio);
                 audio.play();
             });
            
@@ -24,7 +25,11 @@ function recordAudio() {
             setTimeout(() => {
                 $("#speaker").prop( "checked", false )
                 mediaRecorder.stop();
+                $(".loader").css("display", "none");
               }, 5000);
         });
-        
+}
+
+function saveAudio(audio) {
+    console.log(audio);
 }

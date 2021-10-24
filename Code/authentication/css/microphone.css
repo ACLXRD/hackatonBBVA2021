@@ -37,8 +37,9 @@
     stroke-opacity: 0.5;
   }
   .background .loader {
+    display: none;
     fill: none;
-    /* stroke: #1464A5; */
+    stroke: #1464A5;
     stroke-width: 3;
     stroke-linecap: round;
     stroke-dasharray: 0;
@@ -71,7 +72,7 @@
   }
   
   input:checked ~ .background .loader {
-    animation: line 5s linear infinite, spin 10s linear infinite;
+    animation: line 5s linear infinite, spin 5s linear infinite;
     stroke-dasharray: 280;
   }
   input:checked ~ .background .microphone {
