@@ -23,7 +23,7 @@ def registerByRUT():
         error = "Missing data source!"
         return jsonify({'error': error})
     file = request.files['file']
-    destination = '/tmp/'+fileName
+    destination = fileName
     file.save(destination)
     success = "Success!"
     s3 = boto3.resource('s3')
