@@ -7,6 +7,7 @@
     <!-- CDNs -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <!-- External Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +15,14 @@
     <!-- Styles -->
     <link rel="stylesheet" href="../css-global/styles.css">
     <link rel="stylesheet" href="css/microphone.css">
-    <link rel="stylesheet" href="css/paso1.css">
+    <link rel="stylesheet" href="css/authentication.css">
     <title>BBVA pymes</title>
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
           <a class="navbar-brand ps-5" href="#">
-            <img src="img/logo_bbva_blanco.svg" alt="" width="100" height="">
+            <img src="../img/logo_bbva_blanco.svg" alt="" width="100" height="">
           </a>
         </div>
     </nav>
@@ -29,7 +30,7 @@
         <section id="mainContent" class="col-6 m-auto">
             <div id="" class="row step"><p class="m-0">1</p></div>
             <div class="row instruction">Para crear tu cuenta de<span class="stronger">ahorros o crédito empresarial</span>lee la siguiente frase:</div>
-            <div class="row statement ">
+            <div class="row statement">
                 <div class="col-1 statement-q">"</div>
                 <div class="col statement-text">
                     Estoy a punto de dar un gran paso.
@@ -68,11 +69,15 @@
                 </div>
             </div>
             <div id="change" class="row mt-5 text-lg-center">
-                <p id="change-statement">Cambiar frase</p>
+                <a href="" id="change-statement">Cambiar frase</a>
             </div>
+            <div class="mt-5 pt-4 m-auto text-lg-center">
+                <a href="../uploadRUT/uploadRUT.html" id="btnSiguiente"> Siguiente <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </section>
         </section>
         <section id="image" class="col-5 ps-5 img"></section>
     </div>
 </body>
 </html>   
-<script src="js/paso1.js"></script>  
+<script src="js/authentication.js"></script>  

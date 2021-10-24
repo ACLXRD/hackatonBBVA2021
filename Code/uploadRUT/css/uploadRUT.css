@@ -1,0 +1,64 @@
+#image{
+    background: url(../../img/Imagen\ 4.png);
+    background-position: center center;
+    background-size: cover;
+}
+.step{
+    color: var(--objblue);
+    font-size: 70px;
+    text-align: center;
+}
+.instruction{
+    display: inline-block;
+    font-size: 30px;
+    padding-right: 5%;
+}
+.statement{
+    color: var(--objblue);
+    margin: 4% auto;
+    width: 70%;
+}
+.statement-q{
+    font-family: 'Engravers MT';
+    font-size: 70px;
+    padding: 0;
+    text-align: right;
+    transform: scale(-1,1);
+}
+.statement-text{
+    font-size: 28px; 
+    padding-top: 15px;
+}
+.bi-upload{
+    color: var(--objblue);
+    border-radius: 50%;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    padding: 10px 12px;
+}
+#result{
+    color: var(--linkblue);
+    font-style: italic;
+}
+#upload-file{
+    display:none;
+}
+#btnSiguiente a{
+    color: white;
+}
+.bi-arrow-right{
+    padding: 2px 2px 0;
+}
+#btnSiguiente{
+    color: white;
+    background-color: var(--darkblue);
+    border-radius: 20px;
+    display: none;
+    font-size: 20px;
+    padding: 10px 30px;
+    width: 30%;
+}
+
+#btnSiguiente:hover{
+    background-color: var(--objblue);
+}

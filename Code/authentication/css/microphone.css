@@ -37,7 +37,7 @@
     stroke-opacity: 0.5;
   }
   .background .loader {
-    display: none;
+  display: none;
     fill: none;
     stroke: #1464A5;
     stroke-width: 3;
